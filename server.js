@@ -35,7 +35,7 @@ var bodyParser = require('body-parser');
      app.post('/todos', function (req,res){
      	var body = req.body;
      	body.id = todoNextId++;
-     	todos.push(body);
+     	todos.push(body); 
 
      	console.log('description:' + body.description);
      	res.json(body);
